@@ -1,0 +1,57 @@
+@import "tailwindcss";
+
+@font-face{
+    font-family:font1;
+    src: url(../public/Lausanne-300.woff2);
+}
+
+@font-face{
+    font-family:font2;
+    src: url(../public/Lausanne-500.woff2);
+}
+
+@keyframes zoom {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.08); }
+}
+
+@keyframes glow {
+  0%, 100% { box-shadow: 0 0 40px rgba(255, 0, 0, 0.4); }
+  50% { box-shadow: 0 0 60px rgba(255, 0, 0, 0.7); }
+}
+
+.animate-zoom {
+  animation: zoom 6s ease-in-out infinite;
+}
+
+.animate-glow {
+  animation: glow 4s ease-in-out infinite;
+}
+
+@keyframes shine {
+  0% { background-position: 0% 50%; }
+  100% { background-position: 100% 50%; }
+}
+
+.animate-shine {
+  background-size: 300% auto;
+  animation: shine 6s linear infinite;
+}
+
+video {
+  display: block; /* avoids inline whitespace */
+  overflow: hidden;
+} 
+
+@keyframes floating {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-6px);
+  }
+}
+
+.floating {
+  animation: floating 4s ease-in-out infinite;
+}
