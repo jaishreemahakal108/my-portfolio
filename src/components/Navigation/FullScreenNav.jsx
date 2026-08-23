@@ -128,8 +128,8 @@ const FullScreenNav = () => {
       <div ref={fullNavLinksRef} className="relative">
         {/* Header row (logo + close) */}
         <div className="navlink flex w-full justify-between items-start opacity-0">
-          <div className='lg:p-5 p-2 cursor-pointer' onClick={() => handleNavigation('/')}>
-            <div className='h-20 w-20'>
+          <div className='p-2 sm:p-3 md:p-4 lg:p-5 cursor-pointer' onClick={() => handleNavigation('/')}>
+            <div className='h-14 w-14 sm:h-16 sm:w-16 md:h-20 md:w-20'>
               <img
                 src="/logo.png"
                 alt="Logo"
@@ -140,10 +140,10 @@ const FullScreenNav = () => {
 
           <div
             onClick={() => setNavOpen(false)}
-            className="lg:h-32 h-20 w-20 lg:w-32 relative cursor-pointer"
+            className="h-16 w-16 sm:h-20 sm:w-20 md:h-28 md:w-28 lg:h-32 lg:w-32 relative cursor-pointer"
           >
-            <div className="lg:h-44 h-28 lg:w-1 w-0.5 -rotate-45 origin-top absolute bg-[#D3FD50]"></div>
-            <div className="lg:h-44 h-28 lg:w-1 w-0.5 right-0 rotate-45 origin-top absolute bg-[#D3FD50]"></div>
+            <div className="h-20 sm:h-28 md:h-36 lg:h-44 w-0.5 lg:w-1 -rotate-45 origin-top absolute bg-[#D3FD50]"></div>
+            <div className="h-20 sm:h-28 md:h-36 lg:h-44 w-0.5 lg:w-1 right-0 rotate-45 origin-top absolute bg-[#D3FD50]"></div>
           </div>
         </div>
 
@@ -157,7 +157,7 @@ const FullScreenNav = () => {
                 idx === menuItems.length - 1 ? 'border-y border-white' : 'border-t border-white'
               } border-white`}
             >
-              <h1 className="font-[font2] text-5xl lg:text-[8vw] text-center lg:leading-[0.8] lg:pt-10 pt-3 uppercase">
+              <h1 className="font-[font2] text-4xl sm:text-5xl md:text-6xl lg:text-[8vw] 2xl:text-[130px] text-center lg:leading-[0.8] lg:pt-10 pt-3 uppercase">
                 {item.title}
               </h1>
 
@@ -166,11 +166,11 @@ const FullScreenNav = () => {
                 <div className="moveX flex items-center">
                   {[1, 2].map((j) => (
                     <React.Fragment key={j}>
-                      <h2 className="whitespace-nowrap font-[font2] lg:text-[8vw] text-5xl text-center lg:leading-[0.8] lg:pt-10 pt-4 uppercase">
+                      <h2 className="whitespace-nowrap font-[font2] text-4xl sm:text-5xl md:text-6xl lg:text-[8vw] 2xl:text-[130px] text-center lg:leading-[0.8] lg:pt-10 pt-4 uppercase">
                         {item.hoverText}
                       </h2>
                       <img
-                        className="lg:h-36 h-14 rounded-full shrink-0 lg:w-96 w-32 object-cover"
+                        className="h-14 sm:h-20 md:h-28 lg:h-36 rounded-full shrink-0 w-32 sm:w-48 md:w-72 lg:w-96 object-cover"
                         src={
                           j === 1
                             ? 'https://k72.ca/uploads/caseStudies/WIDESCAPE/WS---K72.ca---MenuThumbnail-640x290.jpg'

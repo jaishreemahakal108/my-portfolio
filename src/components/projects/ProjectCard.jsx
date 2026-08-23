@@ -4,8 +4,8 @@ const ProjectCard = ({ video, title, link }) => {
 
   const CardContent = (
     <div
-      className='group relative w-full h-[400px] lg:h-[650px] overflow-hidden 
-      rounded-[25px] transition-all duration-700 
+      className='group relative w-full h-[280px] sm:h-[340px] md:h-[420px] lg:h-[500px] xl:h-[420px] 2xl:h-[480px] overflow-hidden
+      rounded-[25px] transition-all duration-700
       hover:shadow-[0_0_50px_rgba(255,215,80,0.4)] hover:scale-[1.02]'
     >
       {/* 🎥 Video - fully fits card */}
@@ -25,7 +25,7 @@ const ProjectCard = ({ video, title, link }) => {
           group-hover:opacity-100 transition-opacity duration-700'
         >
           <span
-            className='text-3xl lg:text-5xl font-[font1] text-yellow-300 tracking-wider 
+            className='text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-[font1] text-yellow-300 tracking-wider
             opacity-0 translate-y-4 group-hover:translate-y-0 group-hover:opacity-100 
             transition-all duration-700 ease-out'
           >

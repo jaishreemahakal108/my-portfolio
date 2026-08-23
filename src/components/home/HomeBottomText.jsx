@@ -46,7 +46,7 @@ const HomeBottomText = () => {
       >
         <Link
           to="/projects"
-          className="text-[8vw] sm:text-[5vw] md:text-[3vw] font-bold transition-colors duration-300"
+          className="text-[8vw] sm:text-[5vw] md:text-[3vw] lg:text-[2.2vw] 2xl:text-4xl font-bold transition-colors duration-300"
         >
           Projects
         </Link>
@@ -62,7 +62,7 @@ const HomeBottomText = () => {
       >
         <Link
           to="/aboutMe"
-          className="text-[8vw] sm:text-[5vw] md:text-[3vw] font-bold transition-colors duration-300"
+          className="text-[8vw] sm:text-[5vw] md:text-[3vw] lg:text-[2.2vw] 2xl:text-4xl font-bold transition-colors duration-300"
         >
           About Me
         </Link>
