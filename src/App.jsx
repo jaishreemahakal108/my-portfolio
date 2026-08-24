@@ -1,24 +1,19 @@
 import { Route, Routes } from 'react-router-dom'
-import Home from './pages/Home'
-import AboutMe from './pages/AboutMe'
-import Projects from './pages/Projects'
-import Navbar from './components/Navigation/Navbar'
-import FullScreenNav from './components/Navigation/FullScreenNav'
-import NavContext from './context/NavContext'
-import Contact from './pages/Contact'
+import Landing from './os/Landing'
 
+// Legacy links resolve straight to the matching app window, rendered at their
+// original URL — no client-side redirect (a same-tick pathname redirect here
+// caused issues with the old page-transition and left the page stuck
+// invisible, so each route mounts the OS, via the scroll intro, directly).
 const App = () => {
   return (
-    <NavContext>
-      <Navbar />
-      <FullScreenNav />
-      <Routes>
-        <Route path='/' element={<Home />} />
-        <Route path='/aboutMe' element={<AboutMe />} />
-        <Route path='/projects' element={<Projects />} />
-        <Route path='/contact' element={<Contact />} />
-      </Routes>
-    </NavContext>
+    <Routes>
+      <Route path='/' element={<Landing />} />
+      <Route path='/aboutMe' element={<Landing initialApp='about' />} />
+      <Route path='/projects' element={<Landing initialApp='projects' />} />
+      <Route path='/contact' element={<Landing initialApp='contact' />} />
+      <Route path='*' element={<Landing />} />
+    </Routes>
   )
 }
 

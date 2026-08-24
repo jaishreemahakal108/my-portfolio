@@ -114,7 +114,7 @@ const AboutMe = () => {
       {/* ========== HERO SECTION ========== */}
       <section
         ref={(el) => (sectionsRef.current[0] = el)}
-        className="min-h-screen flex flex-col md:flex-row justify-center items-center text-center md:text-left gap-10 px-8 md:px-20 pt-24 pb-10 relative"
+        className="min-h-screen flex flex-col md:flex-row justify-center items-center text-center md:text-left gap-8 sm:gap-10 px-6 sm:px-8 md:px-16 lg:px-20 pt-24 pb-10 relative"
       >
         {/* 🌀 Worm Glowing Effect */}
         <div
@@ -123,13 +123,13 @@ const AboutMe = () => {
         ></div>
 
         <div className="md:w-1/2 relative z-10">
-          <h1 className="text-5xl md:text-6xl font-bold mb-4 leading-tight">
+          <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-4 leading-tight">
             Hey, I’m <span className="text-cyan-400">Rajaswa Anand</span>{" "}
             <span ref={handRef} className="inline-block origin-bottom">
               👋
             </span>
           </h1>
-          <p className="text-gray-300 max-w-xl text-lg md:text-xl mb-6">
+          <p className="text-gray-300 max-w-xl text-base sm:text-lg md:text-xl mb-6">
             A passionate Full-Stack Developer who loves crafting fast,
             responsive, and interactive web experiences with modern tech.
           </p>
@@ -149,7 +149,7 @@ const AboutMe = () => {
 
         {/* ✅ Image with glowing worm background */}
         <div className="md:w-1/2 flex justify-center relative z-10">
-          <div className="relative w-[250px] md:w-[350px] h-[350px] md:h-[450px] overflow-hidden rounded-2xl shadow-[0_0_60px_#06b6d4]">
+          <div className="relative w-[220px] sm:w-[280px] md:w-[350px] lg:w-[400px] h-[300px] sm:h-[380px] md:h-[450px] lg:h-[500px] overflow-hidden rounded-2xl shadow-[0_0_60px_#06b6d4]">
             <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,_#06b6d455,_transparent_70%)] animate-pulse-slow rounded-2xl" />
             <img
               src="/img-6.jpg"

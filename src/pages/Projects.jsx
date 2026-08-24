@@ -92,8 +92,8 @@ const Projects = () => {
         {/* PROJECTS Title */}
         <h2
           ref={titleRef}
-          className='relative font-[font2] text-[12vw] lg:text-[8vw] uppercase tracking-wider leading-none 
-                     text-transparent bg-clip-text bg-gradient-to-r from-yellow-400 via-amber-300 to-yellow-600 
+          className='relative font-[font2] text-[12vw] sm:text-[10vw] md:text-[9vw] lg:text-[8vw] xl:text-[7vw] 2xl:text-[110px] uppercase tracking-wider leading-none
+                     text-transparent bg-clip-text bg-gradient-to-r from-yellow-400 via-amber-300 to-yellow-600
                      drop-shadow-[0_0_25px_rgba(255,200,80,0.6)] z-10'
         >
           PROJECTS
@@ -122,7 +122,7 @@ const Projects = () => {
       </div>
 
       {/* 🧱 Projects Grid */}
-      <div className='grid lg:grid-cols-2 grid-cols-1 gap-10 px-4 lg:px-16'>
+      <div className='grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6 sm:gap-8 md:gap-10 px-4 sm:px-8 md:px-12 lg:px-16'>
         {projects.map((proj, idx) => (
           <ProjectCard key={idx} video={proj.video1} title={proj.title} link={proj.link} />
         ))}

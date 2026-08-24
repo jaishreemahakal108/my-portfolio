@@ -75,7 +75,7 @@ export default function Contact() {
       : 0;
 
   return (
-    <div className="relative min-h-screen bg-linear-to-br from-gray-900 to-black text-white flex flex-col items-center px-6 py-16 overflow-hidden">
+    <div className="relative min-h-screen bg-linear-to-br from-gray-900 to-black text-white flex flex-col items-center px-4 sm:px-6 md:px-10 py-10 sm:py-16 overflow-hidden">
       <Toaster position="bottom-center" />
       {/* floating background glow */}
       <motion.div
@@ -88,10 +88,10 @@ export default function Contact() {
 
       {/* header */}
       <div className="text-center mb-12">
-        <h1 className="text-5xl font-extrabold text-yellow-400 mb-4">
+        <h1 className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-yellow-400 mb-4">
           Let's Connect
         </h1>
-        <h2 className="text-xl md:text-2xl text-gray-300 font-medium">
+        <h2 className="text-lg sm:text-xl md:text-2xl text-gray-300 font-medium">
           <Typewriter
             words={[
               "I'm open for collaborations 🤝",
@@ -109,7 +109,7 @@ export default function Contact() {
       </div>
 
       {/* cards */}
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-8 w-full max-w-6xl mb-16">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8 w-full max-w-6xl mb-16">
         {/* LinkedIn */}
         <Tilt tiltMaxAngleX={10} tiltMaxAngleY={10}>
           <div className="flex flex-col justify-between h-full text-center rounded-2xl p-6 bg-white/10 backdrop-blur-md border border-white/10 transition-all duration-500 hover:shadow-[#0a66c2]/40 hover:shadow-xl">
